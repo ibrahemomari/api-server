@@ -1,7 +1,7 @@
 "use strict";
 require("dotenv");
 const POSTGRES_URL =
-  process.env.NODE_ENVIRONMENT === "test"
+  process.env.NODE_ENV === "test"
     ? "sqlite:memory "
     : "postgres://localhost:5432/lap3";
 const Collection = require("./collection-class");
